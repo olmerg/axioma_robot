@@ -1,4 +1,4 @@
-# Scooby package test to connect to motors 
+# Axioma package test to connect to motors 
 
 ## Run
 
