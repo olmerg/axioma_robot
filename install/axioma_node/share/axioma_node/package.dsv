@@ -1,9 +1,0 @@
-source;share/axioma_node/hook/pythonpath.ps1
-source;share/axioma_node/hook/pythonpath.dsv
-source;share/axioma_node/hook/pythonpath.sh
-source;share/axioma_node/hook/ament_prefix_path.ps1
-source;share/axioma_node/hook/ament_prefix_path.dsv
-source;share/axioma_node/hook/ament_prefix_path.sh
-source;../../build/axioma_node/share/axioma_node/hook/pythonpath_develop.ps1
-source;../../build/axioma_node/share/axioma_node/hook/pythonpath_develop.dsv
-source;../../build/axioma_node/share/axioma_node/hook/pythonpath_develop.sh

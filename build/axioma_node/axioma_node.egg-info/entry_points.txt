@@ -1,3 +1,0 @@
-[console_scripts]
-axioma_node = axioma_node.axioma_node:main
-
