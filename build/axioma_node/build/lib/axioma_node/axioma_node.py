@@ -19,7 +19,7 @@ import serial
 import math
 
 from sensor_msgs.msg import JointState
-from nav_msgs.msg import Odometry
+from nav2_msgs.msg import Odometry
 from geometry_msgs.msg import TransformStamped
 
 
@@ -63,12 +63,12 @@ class AxiomaNode(Node):
         self.L = 0.12  # distancia entre las ruedas traseras
         self.r = .04  # radio de las ruedas
         # ODOMETRIA posicion inicial del robot
-        self.frame_base_robot = 'base_link'
-        self.x = 0.0
-        self.y = 0.0
-        self.theta = 0.0
-        self.v_x = 0.0
-        self.w_z = 0.0
+        self.frame_robot = 'base_link'
+        self.x = 0
+        self.y = 0
+        self.theta = 0
+        self.v_x = 0
+        self.w_z = 0
         self.theta_l_ant = 0
         self.theta_r_ant = 0
         # odometria fin variables
@@ -141,7 +141,6 @@ class AxiomaNode(Node):
         joints = JointState()
         joints.header = Header()
         joints.header.frame_id = "base_link"
-        joints.header.stamp = my_time.to_msg()
         joints.name = ['l_tyre', 'r_tyre']
         joints.position = [self.theta_l, self.theta_r]
         joints.velocity = [self.w_l, self.w_r]
@@ -159,19 +158,17 @@ class AxiomaNode(Node):
         self.x += delta_s * math.cos(self.theta + (delta_theta / 2.0))
         self.y += delta_s * math.sin(self.theta + (delta_theta / 2.0))
         self.theta += delta_theta
-        self.v_x = delta_s*delta_t
-        self.w_z = delta_theta*delta_t
         self.publish_odom(my_time)
 
     def publish_odom(self, my_time):
         odom_msg = Odometry()
-        odom_msg.header = Header()
         odom_msg.header.frame_id = "odom"
         odom_msg.child_frame_id = self.frame_base_robot
-        odom_msg.header.stamp = my_time.to_msg()
+        odom_msg.header.stamp = my_time
 
         odom_msg.pose.pose.position.x = self.x
         odom_msg.pose.pose.position.y = self.y
+        odom_msg.pose.pose.position.z = 0
 
         q = tf_transformations.quaternion_from_euler(0, 0, self.theta)
 
@@ -187,7 +184,7 @@ class AxiomaNode(Node):
 
         # Read message content and assign it to
         # corresponding tf variables
-        t.header.stamp = odom_msg.header.stamp
+        t.header.stamp = my_time
         t.header.frame_id = 'odom'
         t.child_frame_id = odom_msg.child_frame_id
 

@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+axioma_node/__init__.py
+axioma_node/axioma_node.py
+axioma_node/prueba_axioma.py
+axioma_node.egg-info/PKG-INFO
+axioma_node.egg-info/SOURCES.txt
+axioma_node.egg-info/dependency_links.txt
+axioma_node.egg-info/entry_points.txt
+axioma_node.egg-info/requires.txt
+axioma_node.egg-info/top_level.txt
+axioma_node.egg-info/zip-safe
+resource/axioma_node

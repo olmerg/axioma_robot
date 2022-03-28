@@ -1,0 +1,38 @@
+running egg_info
+creating ../build/axioma_node/axioma_node.egg-info
+writing ../build/axioma_node/axioma_node.egg-info/PKG-INFO
+writing dependency_links to ../build/axioma_node/axioma_node.egg-info/dependency_links.txt
+writing entry points to ../build/axioma_node/axioma_node.egg-info/entry_points.txt
+writing requirements to ../build/axioma_node/axioma_node.egg-info/requires.txt
+writing top-level names to ../build/axioma_node/axioma_node.egg-info/top_level.txt
+writing manifest file '../build/axioma_node/axioma_node.egg-info/SOURCES.txt'
+reading manifest file '../build/axioma_node/axioma_node.egg-info/SOURCES.txt'
+writing manifest file '../build/axioma_node/axioma_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robot/axioma_robot/build/axioma_node/build
+creating /home/robot/axioma_robot/build/axioma_node/build/lib
+creating /home/robot/axioma_robot/build/axioma_node/build/lib/axioma_node
+copying axioma_node/axioma_node.py -> /home/robot/axioma_robot/build/axioma_node/build/lib/axioma_node
+copying axioma_node/__init__.py -> /home/robot/axioma_robot/build/axioma_node/build/lib/axioma_node
+copying axioma_node/prueba_axioma.py -> /home/robot/axioma_robot/build/axioma_node/build/lib/axioma_node
+running install
+running install_lib
+creating /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node
+copying /home/robot/axioma_robot/build/axioma_node/build/lib/axioma_node/axioma_node.py -> /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node
+copying /home/robot/axioma_robot/build/axioma_node/build/lib/axioma_node/__init__.py -> /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node
+copying /home/robot/axioma_robot/build/axioma_node/build/lib/axioma_node/prueba_axioma.py -> /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node
+byte-compiling /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node/axioma_node.py to axioma_node.cpython-38.pyc
+byte-compiling /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node/prueba_axioma.py to prueba_axioma.cpython-38.pyc
+running install_data
+creating /home/robot/axioma_robot/install/axioma_node/share/ament_index
+creating /home/robot/axioma_robot/install/axioma_node/share/ament_index/resource_index
+creating /home/robot/axioma_robot/install/axioma_node/share/ament_index/resource_index/packages
+copying resource/axioma_node -> /home/robot/axioma_robot/install/axioma_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/robot/axioma_robot/install/axioma_node/share/axioma_node
+running install_egg_info
+Copying ../build/axioma_node/axioma_node.egg-info to /home/robot/axioma_robot/install/axioma_node/lib/python3.8/site-packages/axioma_node-0.0.1-py3.8.egg-info
+running install_scripts
+Installing axioma_node script to /home/robot/axioma_robot/install/axioma_node/lib/axioma_node
+writing list of installed files to '/home/robot/axioma_robot/build/axioma_node/install.log'
